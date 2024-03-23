@@ -1,0 +1,20 @@
+.piano-content {
+    background-color: #f5eeff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 6vw;
+    padding-bottom: 2.5vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+.video-title {
+    font-size: 1.7vw;
+    color: #000000;
+}
+
+.piano-video {
+    width: 60vw;
+}

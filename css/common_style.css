@@ -56,6 +56,10 @@ a {
     justify-content: space-between;
 }
 
+.content-height {
+    min-height: 100vh;
+}
+
 .link__text {
     font-family: "Iceberg";
     font-size: 0.8vw;
