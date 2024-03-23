@@ -3,7 +3,7 @@
 .welcome-content {
     background-color: #f5eeff;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     padding-top: 6vw;
     padding-bottom: 2.5vw;
