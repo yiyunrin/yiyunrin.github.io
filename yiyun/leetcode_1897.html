@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YiYun</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/code_style.css">
+    <script src="js/web.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/monokai-sublime.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <audio id="myAudio">
+        <source src="music/pon.mp3" type="audio/mp3">
+    </audio>
+    <header id="top">
+        <div class="header-content wrapper-content">
+            <h1 class="logo">YIYUN</h1>
+            <nav class="header-nav">
+                <a href="index.html#top" class="link__text">HOME</a>
+                <a href="about.html#top" class="link__text">ABOUT</a>
+                <a href="leetcode.html#top" class="link__text">LEETCODE</a>
+                <a href="" class="link__text">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-leetcode">
+            <div class="leetcode-content wrapper-content">
+                <h1 class="leetcode-title">1897. Redistribute Characters to Make All Strings Equal</h1>
+                <div class="wrapper-leetcode-part">
+                    <h2 class="leetcode-part-title">Problem Link</h2>
+                    <a href="https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/description/"
+                        class="problem-link">&starf; link</a>
+                </div>
+                <div class="wrapper-leetcode-part">
+                    <h2 class="leetcode-part-title">Approach</h2>
+                    <ul class="approach-list">
+                        <li class="approach-text">Traverse all strings to count the occurrences of letters.</li>
+                        <li class="approach-text">
+                            Determine if the quantities of all 26 letters can be divided by n.
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrapper-leetcode-part">
+                    <h2 class="leetcode-part-title">Complexity</h2>
+                    <ul class="complexity-list">
+                        <li class="complexity-text">Time complexity: O(n∗m)</li>
+                        <li class="complexity-text">Space complexity: O(1)</li>
+                    </ul>
+                </div>
+                <div class="wrapper-leetcode-part">
+                    <h2 class="leetcode-part-title">Code</h2>
+                    <pre class="leetcode-code"><code class="Python">
+    class Solution:
+    def makeEqual(self, words: List[str]) -> bool:
+        cnt = [0 for _ in range(26)]
+        n = len(words)
+        for w in words:
+            for c in w:
+                cnt[ord(c) - ord('a')] += 1
+        for i in range(26):
+            if cnt[i] % n != 0:
+                return False
+        return True
+                </code></pre>
+                </div>
+            </div>
+        </section>
+        <div class="wrapper-stamp">
+            <img class="footer-img" src="images/stamp.png" alt="">
+        </div>
+    </main>
+
+    <footer class="wrapper-content">
+        <p>&hearts; YiYun's Website &hearts;</p>
+    </footer>
+</body>
+
+</html>
