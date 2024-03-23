@@ -7,15 +7,12 @@
     <title>YiYun</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common_style.css">
-    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/piano_style.css">
     <link rel="icon" href="images/logo.ico" type="image/x-icon">
     <script src="js/web.js"></script>
 </head>
 
 <body>
-    <audio id="myAudio">
-        <source src="music/pon.mp3" type="audio/mp3">
-    </audio>
     <header id="top">
         <div class="header-content wrapper-content">
             <h1 class="logo">YIYUN</h1>
@@ -29,13 +26,14 @@
     </header>
 
     <main>
-        <section class="section-welcome">
-            <div class="welcome-content wrapper-content content-height">
-                <div class="welcome-text">
-                    <h2 class="welcome__title section__title">Welcome to<br><span>YiYun's</span><br>Website</h2><br>
-                    <a href="about.html#top" class="welcome__link-button link-button">About Me</a>
+        <section class="section-piano">
+            <div class="piano-content wrapper-content content-height">
+                <div class="wrapper-piano-video">
+                    <h1 class="video-title">君に最後の口づけを</h1>
+                    <video controls class="piano-video">
+                        <source src="video/君に最後の口づけを.mp4" type="video/mp4">
+                    </video>
                 </div>
-                <img class="welcome__main-img" src="images/test.jpg" alt="">
             </div>
         </section>
     </main>
